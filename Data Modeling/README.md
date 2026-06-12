@@ -111,7 +111,7 @@ Forest cover (from ISFR 2019, 2021, 2023 surveys) is environmental context data 
 
 ## 📐 Model Snapshot
 
-> See `https://github.com/RaviralaLathasri/Air-Quality-Environmental-Insights/blob/main/Data%20Modeling/air_quality_star_schema.png` in this folder for the full Power BI model view with all relationships visualized.
+> See `air_quality_star_schema.png` in this folder for the full Power BI model view with all relationships visualized.
 
 ---
 
