@@ -2,9 +2,17 @@
 
 ## 📌 Project Overview
 
-This project analyzes **India’s air quality trends (2015–2020)** by combining historical pollution data, **real-time AQI**, and **forest cover statistics** to present a holistic view of environmental health in India.
+This project analyzes **India's air quality trends (2015–2020)** by combining historical pollution data, **real-time AQI**, and **forest cover statistics** to present a holistic view of environmental health in India.
 
 The dashboard is built using **Power BI** and focuses on transforming raw environmental datasets into **clear, actionable insights** through strong data modeling, DAX measures, and visual storytelling.
+
+---
+
+## 🖼️ Dashboard Preview
+
+| | | |
+|---|---|---|
+| ![Preview 1](assets/Dashboard_preview1.jpeg) | ![Preview 2](assets/Dashboard_preview2.jpeg) | ![Preview 3](assets/Dashboard_preview3.jpeg) |
 
 ---
 
@@ -21,7 +29,7 @@ The dashboard is built using **Power BI** and focuses on transforming raw enviro
 ## 🗂️ Datasets Used
 
 | Dataset         | Description                                               |
-| --------------- | --------------------------------------------------------- |
+| --------------- | ----------------------------------------------------------|
 | **cityday**     | Primary fact table with daily city-level AQI & pollutants |
 | **cityhour**    | Hourly city-level pollution data                          |
 | **stationday**  | Daily station-level pollution data                        |
@@ -30,6 +38,8 @@ The dashboard is built using **Power BI** and focuses on transforming raw enviro
 | **aqi**         | State-level daily AQI aggregates                          |
 | **realtime**    | Latest AQI readings for live indicators                   |
 | **forestcover** | ISFR data (2019, 2021, 2023) for environmental context    |
+
+Raw datasets are available in the [`Dataset`](Dataset) folder.
 
 ---
 
@@ -46,6 +56,8 @@ The dashboard is built using **Power BI** and focuses on transforming raw enviro
 
   * Monitoring station count per city
   * Population-weighted indicators (where applicable)
+
+Full data cleaning workflow is documented in [`Data_Cleaning.ipynb`](Data_Cleaning.ipynb).
 
 ---
 
@@ -68,23 +80,30 @@ The dashboard is built using **Power BI** and focuses on transforming raw enviro
 * One-to-Many: Dimensions → Facts
 * Single-direction filtering (bi-directional only when required for slicers)
 
+Full schema diagram and modeling notes are in the [`Data Modeling`](Data%20Modeling) folder.
+
 ---
 
 ## 📐 KPIs & DAX Measures
 
 * **Average AQI** – Overall air quality indicator for India
 * **Forest Cover Change Index** – Tracks environmental sustainability trend
-* **Most Polluted City** – City with highest AQI (Delhi in this dataset)
+* **Most Polluted State** – State with highest average AQI in the dataset
+* **AQI What-If Simulation** – Models the impact of an X% AQI improvement on overall environmental outcomes
+* **Year-over-Year AQI % Change** – Tracks AQI growth/decline across years
+
+All DAX formulas, with explanations, are documented in [`DAX_Measures.md`](DAX_Measures.md).
 
 ---
 
 ## 📊 Key Dashboard Insights
 
-* Pollution hotspots are concentrated around major urban regions
-* **PM2.5 and PM10** are the dominant contributors to AQI
+* Pollution hotspots are concentrated around major urban regions, with **Delhi** as the most critical AQI hotspot
+* **PM10** registers the highest absolute pollutant contribution, with **PM2.5** close behind
 * AQI levels peaked during **2018–2019**
-* Majority of regions fall under the **Moderate AQI** category
-* Forest cover trends show **mixed environmental progress** despite rising pollution
+* Majority of regions fall under the **Moderate AQI** category (43.1%), with a combined 22.93% falling under Poor, Very Poor, and Severe
+* Forest cover trends show **mixed environmental progress** — some states show net forest loss alongside rising AQI, while others (e.g., Chandigarh) show strong restoration gains
+* Health impact analysis shows respiratory illness cases concentrated in the highest AQI severity bands
 
 ---
 
@@ -99,6 +118,8 @@ The dashboard is built using **Power BI** and focuses on transforming raw enviro
 * Scatter maps for hotspot identification
 * Trend charts for time-series analysis
 * KPI cards for quick insights
+* What-if simulation for AQI improvement impact analysis
+* Forest cover vs. AQI correlation scatter plot
 
 ---
 
@@ -106,7 +127,9 @@ The dashboard is built using **Power BI** and focuses on transforming raw enviro
 
 The dashboard is published on **Power BI Service** for easy access and sharing.
 
-🔗 **Dashboard Link:https://app.powerbi.com/view?r=eyJrIjoiOWRjMDA5MTQtNmI1OS00Y2Y2LTgyMzQtMzRjZTczYjRiYjQ0IiwidCI6ImRhZTA4MDk3LTgyNjAtNDk5Ni05MDY2LWZhZTExYmY3MWVhNiJ9
+🔗 **Dashboard Link:** [View Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiOWRjMDA5MTQtNmI1OS00Y2Y2LTgyMzQtMzRjZTczYjRiYjQ0IiwidCI6ImRhZTA4MDk3LTgyNjAtNDk5Ni05MDY2LWZhZTExYmY3MWVhNiJ9)
+
+📁 **PBIX File:** [`airpollution.pbix`](airpollution.pbix)
 
 ---
 
@@ -114,27 +137,10 @@ The dashboard is published on **Power BI Service** for easy access and sharing.
 
 * **Power BI** (Data Modeling, DAX, Visualization)
 * **Power Query** (ETL)
+* **Python / Jupyter Notebook** (Data Cleaning — see [`Data_Cleaning.ipynb`](Data_Cleaning.ipynb))
 * **Excel / CSV** datasets
 * **Star Schema Modeling**
 
 ---
 
-## 📌 Key Learnings
-
-* End-to-end BI project execution
-* Designing scalable data models
-* Writing optimized DAX measures
-* Translating data into business & environmental insights
-* Building professional, portfolio-ready dashboards
-
----
-
-## 📬 Contact
-
-**Author:** Latha Sri Ravirala
-🔗 LinkedIn: [https://www.linkedin.com/in/lathasri-ravirala-06b606309](https://www.linkedin.com/in/lathasri-ravirala-06b606309)
-
----
-
-⭐ If you find this project useful, feel free to star the repository!
-
+## 📁 Repository Structure
