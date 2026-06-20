@@ -144,30 +144,20 @@ The dashboard is published on **Power BI Service** for easy access and sharing.
 ---
 
 ## 📁 Repository Structure
-## 📁 Repository Structure
+
 ├── Data Modeling/
-
 │   ├── README.md
-
 │   └── air_quality_star_schema.png
-
 ├── Dataset/
-
 ├── assets/
-
 │   ├── Dashboard_preview1.jpeg
-
 │   ├── Dashboard_preview2.jpeg
-
 │   └── Dashboard_preview3.jpeg
-
 ├── DAX_Measures.md
-
 ├── Data_Cleaning.ipynb
-
 ├── README.md
-
 └── airpollution.pbix
+
 
 ---
 
