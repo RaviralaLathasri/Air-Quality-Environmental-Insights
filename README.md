@@ -144,3 +144,48 @@ The dashboard is published on **Power BI Service** for easy access and sharing.
 ---
 
 ## 📁 Repository Structure
+## 📁 Repository Structure
+├── Data Modeling/
+
+│   ├── README.md
+
+│   └── air_quality_star_schema.png
+
+├── Dataset/
+
+├── assets/
+
+│   ├── Dashboard_preview1.jpeg
+
+│   ├── Dashboard_preview2.jpeg
+
+│   └── Dashboard_preview3.jpeg
+
+├── DAX_Measures.md
+
+├── Data_Cleaning.ipynb
+
+├── README.md
+
+└── airpollution.pbix
+
+---
+
+## 📌 Key Learnings
+
+* End-to-end BI project execution, from raw data to published dashboard
+* Designing scalable star-schema data models
+* Writing optimized, reusable DAX measures (including what-if simulations)
+* Translating data into business & environmental insights
+* Building professional, portfolio-ready dashboards
+
+---
+
+## 📬 Contact
+
+**Author:** Latha Sri Ravirala
+🔗 LinkedIn: [lathasri-ravirala](https://www.linkedin.com/in/lathasri-ravirala-06b606309)
+
+---
+
+⭐ If you find this project useful, feel free to star the repository!
